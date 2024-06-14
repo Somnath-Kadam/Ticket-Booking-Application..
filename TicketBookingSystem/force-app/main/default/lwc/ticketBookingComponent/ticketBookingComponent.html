@@ -1,0 +1,12 @@
+
+<template>
+    <lightning-card title="Ticket Booking Page">
+        <lightning-record-edit-form object-api-name="Ticket__c" onsuccess={handlesuccess}>
+            <lightning-input-field field-name="Concert__c" onchange={handlechange}></lightning-input-field>
+            <lightning-input-field field-name="Price__c" value={showprice}></lightning-input-field>
+            <lightning-input-field field-name="Individual__c"></lightning-input-field>
+            <lightning-button variant="success" type="submit" label="Save"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
+
